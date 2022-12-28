@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body style="background-image: linear-gradient(to left, rgb(153, 183, 233), rgb(215, 184, 250)); text-align: center; margin-top: 300px">
 
+<button style="font-size: 17px; background-color: #76bb6d; padding: 14px 40px; border-radius: 8px;" id="invite">Start Call <i class="fas fa-phone"></i></button>
+
+<audio id="remote"></audio>
+<!-- <video id="remote-video" autoplay></video>
+<video id="local-video" autoplay muted></video> -->
+
+<button style="font-size: 20px; background-color: #ffffff; padding: 14px 40px; border-radius: 8px;" id="volume-up">Raise Volume <i class="fas fa-volume-up"></i></button>
+<button style="font-size: 20px; background-color: #ffffff; padding: 14px 40px; border-radius: 8px;" id="volume-down">Lower Volume <i class="fas fa-volume-down"></i></button>
+<button style="font-size: 20px; background-color: #d68c24; padding: 14px 40px; border-radius: 8px;" id="mute" class="off">Mute <i class="fas fa-volume-mute"></i></button>
+<button style="font-size: 20px; background-color: #e07a7a; padding: 14px 40px; border-radius: 8px;" id="end-call" class="off">End Call <i class="fas fa-phone-slash"></i></button>
+
+<script src="http://sipjs.com/download/sip-0.13.5.js"></script>
+<script src="audio.js"></script>
+
+
+<script>
+  if (window.location.hash === '#dev') {
+    var i = 1;
+    window.setInterval(function () { console.log(i); i++; }, 950);
+    window.setTimeout(function () { window.location.reload(); }, 10000);
+  }
+</script>
+</body>
+</html>
