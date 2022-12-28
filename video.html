@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" type="text/css" href="./video.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body style="background-image: linear-gradient(to left, rgb(153, 183, 233), rgb(215, 184, 250));">
+
+<div>
+
+  <div class="smartphone" style="align-items: center">
+    <video id="remote-video" autoplay></video>
+    <audio id="remote"></audio>
+  </div>
+
+
+<!-- 2. Add Identity -->
+<!-- <form id="identity">
+  <input type="text" id="address" />
+  <input type="password" id="password" />
+  <button id="auth">Authenticate</button>
+</form> -->
+
+<!-- 1. Add destination -->
+  <div style="margin-top: 50px; margin-left: 525px">
+  <input style="font-size: 20px; background-color: #ffffff; padding: 14px 40px; border-radius: 8px" type="text" id="destination"/>
+  <button style="font-size: 20px; background-color: #76bb6d; padding: 14px 40px; border-radius: 8px; margin-right: 100px;" id="invite">Start Call</button>
+  <!-- 4. Video-->
+  <button style="font-size: 20px; background-color: #ffffff; padding: 14px 40px; border-radius: 8px;" id="mute" class="off">Mute</button>
+
+  <button style="font-size: 20px; background-color: #e07a7a; padding: 14px 40px; border-radius: 8px;" id="end-call" class="off">End Call <i class="fas fa-phone-slash"></i></button>
+</div>
+</div>
+
+<script src="http://sipjs.com/download/sip-0.13.5.js"></script>
+<script src="video.js"></script>
+
+<script>
+  if (window.location.hash === '#dev') {
+    var i = 1;
+    window.setInterval(function () { console.log(i); i++; }, 950);
+    window.setTimeout(function () { window.location.reload(); }, 10000);
+  }
+</script>
+</body>
+</html>
