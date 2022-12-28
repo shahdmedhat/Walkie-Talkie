@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SIP.js Demo 3</title>
+  <link rel="stylesheet" type="text/css" href="./demo-3.css">
+</head>
+
+<body style="background-image: linear-gradient(to left, rgb(153, 183, 233), rgb(215, 184, 250))">
+  <!-- <span><a href="../tut-ic/index.html">&lt; Index</a></span> -->
+
+  <!-- <h2>Demo: Data Channel - Between Two Users</h2>
+
+  <div>
+    When this page was loaded, a <code>SimpleUser</code> was created for two users - Alice & Bob
+    <ol>
+      <li>Connect with SIP WebSocket Server</li>
+      <li>Register user to receive calls</li>
+      <li>Initiate a data session</li>
+      <li>End the data session</li>
+      <li>Unregister</li>
+      <li>Disconnect</li>
+    </ol>
+  </div> -->
+
+  <div class="content">
+    <div>
+      <h2 style="font-family: Courier New; text-align: left; margin-right: 100px; margin-top: 120px">Amira</h2>
+      <h2 style="font-family: Courier New; text-align: left;  margin-top: 390px">Shahd</h2>
+    </div>
+
+    <div id="alice" class="user">
+    <div>
+      <div class="message-box">
+        <div class="message-box-received disabled" id="receiveAlice" disabled></div>
+      </div>
+      
+      <input class="message-box-message" type="text" id="messageAlice" style = "padding-left: 15px" placeholder="Message Shahd" disabled>
+      <button id="sendAlice" style="font-size: 15px; background-color: #d45d79; padding: 14px 40px; border-radius: 8px; color: rgb(255, 255, 255)" disabled>Send</button>
+      
+      
+      </div>
+      
+      
+      <div class="multi-button">
+        <button type= "button"  id="connectAlice" disabled>Connect</button>
+        <button type= "button"  id="registerAlice" disabled>Register User</button>
+        <button type= "button"  id="beginAlice" disabled>Initiate Session</button>
+        <button type= "button"  id="endAlice" disabled>End Session</button>
+        <button type= "button"  id="unregisterAlice" disabled>Unregister</button>
+        <button type= "button"  id="disconnectAlice" disabled>Disconnect</button>
+      </div>
+      
+      <div id="bob" class="user">
+        <div class="message-box">
+          <div class="message-box-received disabled" id="receiveBob"></div>
+        </div>
+        
+        
+        <input class="message-box-message" type="text" id="messageBob" style = "padding-left: 15px" placeholder="Message Amira" disabled>
+        <button id="sendBob" style="font-size: 15px; background-color: #d45d79; padding: 14px 40px; border-radius: 8px; color: rgb(255, 255, 255)" disabled>Send</button>
+        
+        
+        <div class="multi-button">
+          <button class="multi-button_button" id="connectBob" disabled>Connect</button>
+          <button class="multi-button_button" id="registerBob" disabled>Register User</button>
+          <button class="multi-button_button" id="beginBob" disabled>Initiate Session</button>
+          <button class="multi-button_button" id="endBob" disabled>End Session</button>
+          <button class="multi-button_button" id="unregisterBob" disabled>Unregister</button>
+          <button class="multi-button_button" id="disconnectBob" disabled>Disconnect</button>
+        </div>
+        
+        
+        <!-- <div>
+
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="connectA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="connectBob" disabled>Connect</div>
+          </label>
+        
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="RegisterUserA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="registerBob" disabled >Register User</div>
+          </label>
+        
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="InitiateSessionA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="beginBob" disabled>Initiate Session</div>
+          </label>
+        
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="EndSessionA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="endBob" disabled>End Session</div>
+          </label>
+          
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="UnregisterA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="unregisterBob" disabled>Unregister</div>
+          </label>
+          
+          <label class="rad-label">
+            <input type="radio" class="rad-input" name="DisconnectA">
+            <div class="rad-design"></div>
+            <div class="rad-text" id="disconnectBob" disabled>Disconnect</div>
+          </label>
+        
+        </div> -->
+       
+      </div>
+    
+    </div>  
+      
+    </div>
+
+   
+  <script src="./dist/demo-3.js"
+    onerror="alert('To run this demo you must first build the library and demo source! See the README.')">
+    </script>
+
+</body>
+
+</html>

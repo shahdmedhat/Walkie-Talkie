@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="./demo-4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body style="background-image: linear-gradient(to left, rgb(153, 183, 233), rgb(215, 184, 250))">
+  <h1 style="margin-top: 20px ;margin-left: 20px">Welcome to our Customer Support</h1>
+
+  <!-- <span><a href="index.html">&lt; Back</a></span> -->
+  
+  <div class="smartphone">
+
+  <ul style="margin-top: 60px">
+    <button style="font-size: 17px; background-color: #76bb6d; border-radius: 8px; margin-bottom: 10px; padding: 10px 10px" id="connect" disabled>Connect  <i class="fas fa-signal"></i> </button> <code><span id="server"></span></code>
+    <button style="font-size: 17px; background-color: #7277e2; border-radius: 8px; margin-bottom: 10px; padding: 10px 10px" id="call" disabled>Place Call <i class="fas fa-phone"></i>  </button> <code><span id="target"></span></code> <br/>
+    <button style="font-size: 17px; background-color: #e07a7a; border-radius: 8px; margin-bottom: 10px; padding: 10px 10px" id="hangup" disabled>End Call  <i class="fas fa-phone-slash"></i> </button>
+    <button style="font-size: 17px; background-color: #d68c24; border-radius: 8px; margin-bottom: 10px; padding: 10px 10px" id="disconnect" disabled>Disconnect <i class="fas fa-phone fa-times"></i></button>
+  </ul>
+
+
+  <div style="text-align: center; margin-top: 50px">
+
+    <audio id="remoteAudio" controls>
+      <p>Your browser doesn't support HTML5 audio.</p>
+    </audio>
+  
+<div style="margin-top: 10px"> 
+  <input type="checkbox" id="hold" name="hold" disabled>
+  <label for="hold">Hold</label>
+  
+  <input type="checkbox" id="mute" name="mute" disabled>
+  <label for="mute">Mute</label>
+</div>
+
+
+  <div class="dtmf"> <span id="dtmf"></span></div>
+  <div>
+    <div>
+      <button class="keypad" disabled>1</button>
+      <button class="keypad" disabled>2</button>
+      <button class="keypad" disabled>3</button>
+    </div>
+    <div>
+      <button class="keypad" disabled>4</button>
+      <button class="keypad" disabled>5</button>
+      <button class="keypad" disabled>6</button>
+    </div>
+    <div>
+      <button class="keypad" disabled>7</button>
+      <button class="keypad" disabled>8</button>
+      <button class="keypad" disabled>9</button>
+    </div>
+    <div>
+      <button class="keypad" disabled>*</button>
+      <button class="keypad" disabled>0</button>
+      <button class="keypad" disabled>#</button>
+    </div>
+  </div>
+
+</div>
+
+  <script src="./dist/demo-4.js"
+    onerror="alert('To run this demo you must first build the library and demo source! See the README.')">
+  </script>
+  
+  </div>
+</body>
+
+</html>
